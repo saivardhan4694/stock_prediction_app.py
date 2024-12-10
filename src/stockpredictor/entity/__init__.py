@@ -26,6 +26,7 @@ class ModelTrainingConfig:
     root_dir: Path
     training_input: Path
     lstm_model: Path
+    test_data_path: Path
     arima_p: int 
     arima_d: int 
     arima_q: int 
@@ -38,3 +39,12 @@ class ModelTrainingConfig:
     lstm_epochs: int
     lstm_batch_size: int
     lstm_verbose: int
+
+@dataclass
+class ModelPredictionConfig:
+    root_dir: Path
+    model: Path
+    test_input: Path
+    forecast_input: Path
+    predictions_output: Path
+    plot_output: Path

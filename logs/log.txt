@@ -967,3 +967,360 @@ Incompatible shapes: [32] vs. [32,120]
 [2024-12-09 16:39:50,170: INFO: main: >>>>>>> stage MOdel training Stage completed <<<<<<<<
 
 =================x]
+[2024-12-10 09:53:56,656: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-10 09:53:56,658: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-10 09:54:12,106: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-12-10 09:54:12,109: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 09:54:12,109: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 09:54:12,109: INFO: common: Directory artifacts created successfully]
+[2024-12-10 09:54:12,109: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-12-10 09:54:12,962: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-12-10 09:54:12,962: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-12-10 09:54:12,963: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-12-10 09:54:12,963: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-12-10 09:54:12,963: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 09:54:12,963: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 09:54:12,963: INFO: common: Directory artifacts created successfully]
+[2024-12-10 09:54:12,969: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-12-10 09:54:12,994: INFO: data_validation: Data validation successful. Report saved to artifacts/data_validation/validation_report.txt]
+[2024-12-10 09:54:13,020: INFO: common: csv file: artifacts/data_validation/validated_data.csv saved successfully]
+[2024-12-10 09:54:13,020: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
+[2024-12-10 09:54:13,020: INFO: main: >>>>>>> stage Data Transforamtion Stage started <<<<<<<<]
+[2024-12-10 09:54:13,026: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 09:54:13,026: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 09:54:13,026: INFO: common: Directory artifacts created successfully]
+[2024-12-10 09:54:13,026: INFO: common: Directory artifacts/data_transformation created successfully]
+[2024-12-10 09:54:13,146: INFO: common: csv file: artifacts/data_transformation/transformed_data.csv saved successfully]
+[2024-12-10 09:54:13,146: INFO: main: >>>>>>> stage Data Transforamtion Stage completed <<<<<<<<
+
+=================x]
+[2024-12-10 09:54:13,149: INFO: main: >>>>>>> stage MOdel training Stage started <<<<<<<<]
+[2024-12-10 09:54:13,151: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 09:54:13,151: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 09:54:13,151: INFO: common: Directory artifacts created successfully]
+[2024-12-10 09:54:13,166: INFO: common: Directory artifacts/model_trainer created successfully]
+[2024-12-10 09:56:24,234: INFO: common: csv file: artifacts/model_trainer/test_data.csv saved successfully]
+[2024-12-10 09:56:24,237: INFO: main: >>>>>>> stage MOdel training Stage completed <<<<<<<<
+
+=================x]
+[2024-12-10 10:28:58,078: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-10 10:28:58,078: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-10 10:29:01,581: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-12-10 10:29:01,587: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 10:29:01,587: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 10:29:01,587: INFO: common: Directory artifacts created successfully]
+[2024-12-10 10:29:01,587: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-12-10 10:29:02,103: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-12-10 10:29:02,103: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-12-10 10:29:02,105: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-12-10 10:29:02,106: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-12-10 10:29:02,108: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 10:29:02,109: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 10:29:02,109: INFO: common: Directory artifacts created successfully]
+[2024-12-10 10:29:02,115: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-12-10 10:29:02,122: INFO: data_validation: Data validation successful. Report saved to artifacts/data_validation/validation_report.txt]
+[2024-12-10 10:29:02,135: INFO: common: csv file: artifacts/data_validation/validated_data.csv saved successfully]
+[2024-12-10 10:29:02,135: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
+[2024-12-10 10:29:02,137: INFO: main: >>>>>>> stage Data Transforamtion Stage started <<<<<<<<]
+[2024-12-10 10:29:02,140: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 10:29:02,141: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 10:29:02,141: INFO: common: Directory artifacts created successfully]
+[2024-12-10 10:29:02,142: INFO: common: Directory artifacts/data_transformation created successfully]
+[2024-12-10 10:29:02,204: INFO: common: csv file: artifacts/data_transformation/transformed_data.csv saved successfully]
+[2024-12-10 10:29:02,204: INFO: main: >>>>>>> stage Data Transforamtion Stage completed <<<<<<<<
+
+=================x]
+[2024-12-10 10:29:02,204: INFO: main: >>>>>>> stage MOdel training Stage started <<<<<<<<]
+[2024-12-10 10:29:02,207: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 10:29:02,210: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 10:29:02,210: INFO: common: Directory artifacts created successfully]
+[2024-12-10 10:29:02,210: INFO: common: Directory artifacts/model_trainer created successfully]
+[2024-12-10 10:31:11,569: INFO: common: csv file: artifacts/model_trainer/test_data.csv saved successfully]
+[2024-12-10 10:31:11,569: INFO: main: >>>>>>> stage MOdel training Stage completed <<<<<<<<
+
+=================x]
+[2024-12-10 10:59:07,090: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-10 10:59:07,090: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-10 10:59:10,679: INFO: main: >>>>>>> stage MOdel prediction Stage started <<<<<<<<]
+[2024-12-10 10:59:10,679: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 10:59:10,679: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 10:59:10,679: INFO: common: Directory artifacts created successfully]
+[2024-12-10 10:59:10,679: ERROR: main: "'ConfigBox' object has no attribute 'model_evaluation'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 593, in box.box.Box.__getitem__
+KeyError: 'model_evaluation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 632, in box.box.Box.__getattr__
+  File "box\\box.py", line 620, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'model_evaluation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 634, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'model_evaluation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 648, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_evaluation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 593, in box.box.Box.__getitem__
+KeyError: 'model_evaluation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 632, in box.box.Box.__getattr__
+  File "box\\box.py", line 620, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'model_evaluation'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 634, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'model_evaluation'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 52, in <module>
+    model_prediction.initiate_prediction()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_05_prediction_pipeline.py", line 16, in initiate_prediction
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_05_prediction_pipeline.py", line 12, in initiate_prediction
+    model_prediction_config = config.get_model_prediction_config()
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\config\configuration.py", line 88, in get_model_prediction_config
+    config = self.config.model_evaluation
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 648, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_evaluation'"
+[2024-12-10 11:00:15,488: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-10 11:00:15,488: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-10 11:00:19,119: INFO: main: >>>>>>> stage MOdel prediction Stage started <<<<<<<<]
+[2024-12-10 11:00:19,127: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 11:00:19,127: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 11:00:19,127: INFO: common: Directory artifacts created successfully]
+[2024-12-10 11:00:19,127: INFO: common: Directory artifacts/model_prediction created successfully]
+[2024-12-10 11:00:19,127: ERROR: main: ModelPredictionConfig.__init__() missing 2 required positional arguments: 'predictions_output' and 'plot_output']
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 52, in <module>
+    model_prediction.initiate_prediction()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_05_prediction_pipeline.py", line 16, in initiate_prediction
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_05_prediction_pipeline.py", line 12, in initiate_prediction
+    model_prediction_config = config.get_model_prediction_config()
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\config\configuration.py", line 92, in get_model_prediction_config
+    model_prediction_config = ModelPredictionConfig(
+                              ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ModelPredictionConfig.__init__() missing 2 required positional arguments: 'predictions_output' and 'plot_output'
+[2024-12-10 11:01:18,266: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-10 11:01:18,266: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-10 11:01:22,001: INFO: main: >>>>>>> stage MOdel prediction Stage started <<<<<<<<]
+[2024-12-10 11:01:22,004: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 11:01:22,004: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 11:01:22,004: INFO: common: Directory artifacts created successfully]
+[2024-12-10 11:01:22,004: INFO: common: Directory artifacts/model_prediction created successfully]
+[2024-12-10 11:01:22,604: ERROR: main: all the input arrays must have same number of dimensions, but the array at index 0 has 3 dimension(s) and the array at index 1 has 4 dimension(s)]
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 52, in <module>
+    model_prediction.initiate_prediction()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_05_prediction_pipeline.py", line 16, in initiate_prediction
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_05_prediction_pipeline.py", line 14, in initiate_prediction
+    predictor.forecast_30_days()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\model_prediction.py", line 57, in forecast_30_days
+    predictions = self.predict_next_30_days(model, last_known_data, scaler, n_days=30)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\model_prediction.py", line 29, in predict_next_30_days
+    current_input = np.append(current_input[:, 1:, :], [[predicted_scaled]], axis=1)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda3\Lib\site-packages\numpy\lib\function_base.py", line 5618, in append
+    return concatenate((arr, values), axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: all the input arrays must have same number of dimensions, but the array at index 0 has 3 dimension(s) and the array at index 1 has 4 dimension(s)
+[2024-12-10 11:06:33,623: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-10 11:06:33,623: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-10 11:06:37,049: INFO: main: >>>>>>> stage MOdel prediction Stage started <<<<<<<<]
+[2024-12-10 11:06:37,049: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 11:06:37,049: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 11:06:37,049: INFO: common: Directory artifacts created successfully]
+[2024-12-10 11:06:37,049: INFO: common: Directory artifacts/model_prediction created successfully]
+[2024-12-10 11:06:37,605: ERROR: main: cannot reshape array of size 120 into shape (1,1,1)]
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 52, in <module>
+    model_prediction.initiate_prediction()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_05_prediction_pipeline.py", line 16, in initiate_prediction
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_05_prediction_pipeline.py", line 14, in initiate_prediction
+    predictor.forecast_30_days()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\model_prediction.py", line 58, in forecast_30_days
+    predictions = self.predict_next_30_days(model, last_known_data, scaler, n_days=30)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\model_prediction.py", line 29, in predict_next_30_days
+    predicted_scaled_reshaped = predicted_scaled.reshape(1, 1, 1)  # Reshape to (1, 1, 1)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: cannot reshape array of size 120 into shape (1,1,1)
+[2024-12-10 11:12:16,495: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-10 11:12:16,495: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-10 11:12:20,386: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-12-10 11:12:20,392: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 11:12:20,392: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 11:12:20,392: INFO: common: Directory artifacts created successfully]
+[2024-12-10 11:12:20,392: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-12-10 11:12:21,111: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-12-10 11:12:21,111: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-12-10 11:12:21,111: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-12-10 11:12:21,111: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-12-10 11:12:21,111: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 11:12:21,124: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 11:12:21,125: INFO: common: Directory artifacts created successfully]
+[2024-12-10 11:12:21,126: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-12-10 11:12:21,135: INFO: data_validation: Data validation successful. Report saved to artifacts/data_validation/validation_report.txt]
+[2024-12-10 11:12:21,147: INFO: common: csv file: artifacts/data_validation/validated_data.csv saved successfully]
+[2024-12-10 11:12:21,147: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
+[2024-12-10 11:12:21,147: INFO: main: >>>>>>> stage Data Transforamtion Stage started <<<<<<<<]
+[2024-12-10 11:12:21,150: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 11:12:21,152: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 11:12:21,152: INFO: common: Directory artifacts created successfully]
+[2024-12-10 11:12:21,152: INFO: common: Directory artifacts/data_transformation created successfully]
+[2024-12-10 11:12:21,218: INFO: common: csv file: artifacts/data_transformation/transformed_data.csv saved successfully]
+[2024-12-10 11:12:21,218: INFO: main: >>>>>>> stage Data Transforamtion Stage completed <<<<<<<<
+
+=================x]
+[2024-12-10 11:12:21,219: INFO: main: >>>>>>> stage MOdel training Stage started <<<<<<<<]
+[2024-12-10 11:12:21,221: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 11:12:21,222: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 11:12:21,222: INFO: common: Directory artifacts created successfully]
+[2024-12-10 11:12:21,223: INFO: common: Directory artifacts/model_trainer created successfully]
+[2024-12-10 11:13:23,071: INFO: common: csv file: artifacts/model_trainer/test_data.csv saved successfully]
+[2024-12-10 11:13:23,071: INFO: main: >>>>>>> stage MOdel training Stage completed <<<<<<<<
+
+=================x]
+[2024-12-10 11:13:23,071: INFO: main: >>>>>>> stage MOdel prediction Stage started <<<<<<<<]
+[2024-12-10 11:13:23,071: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 11:13:23,071: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 11:13:23,081: INFO: common: Directory artifacts created successfully]
+[2024-12-10 11:13:23,081: INFO: common: Directory artifacts/model_prediction created successfully]
+[2024-12-10 11:13:23,593: ERROR: main: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 2, the array at index 0 has size 10 and the array at index 1 has size 1]
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 52, in <module>
+    model_prediction.initiate_prediction()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_05_prediction_pipeline.py", line 16, in initiate_prediction
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_05_prediction_pipeline.py", line 14, in initiate_prediction
+    predictor.forecast_30_days()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\model_prediction.py", line 58, in forecast_30_days
+    predictions = self.predict_next_30_days(model, last_known_data, scaler, n_days=30)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\model_prediction.py", line 30, in predict_next_30_days
+    current_input = np.append(current_input[:, 1:, :], predicted_scaled_reshaped, axis=1)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda3\Lib\site-packages\numpy\lib\function_base.py", line 5618, in append
+    return concatenate((arr, values), axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 2, the array at index 0 has size 10 and the array at index 1 has size 1
+[2024-12-10 11:30:11,124: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-10 11:30:11,124: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-10 11:30:14,804: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-12-10 11:30:14,807: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 11:30:14,808: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 11:30:14,808: INFO: common: Directory artifacts created successfully]
+[2024-12-10 11:30:14,813: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-12-10 11:30:15,472: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-12-10 11:30:15,472: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-12-10 11:30:15,473: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-12-10 11:30:15,473: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-12-10 11:30:15,475: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 11:30:15,477: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 11:30:15,478: INFO: common: Directory artifacts created successfully]
+[2024-12-10 11:30:15,478: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-12-10 11:30:15,487: INFO: data_validation: Data validation successful. Report saved to artifacts/data_validation/validation_report.txt]
+[2024-12-10 11:30:15,505: INFO: common: csv file: artifacts/data_validation/validated_data.csv saved successfully]
+[2024-12-10 11:30:15,505: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
+[2024-12-10 11:30:15,505: INFO: main: >>>>>>> stage Data Transforamtion Stage started <<<<<<<<]
+[2024-12-10 11:30:15,505: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 11:30:15,505: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 11:30:15,511: INFO: common: Directory artifacts created successfully]
+[2024-12-10 11:30:15,511: INFO: common: Directory artifacts/data_transformation created successfully]
+[2024-12-10 11:30:15,565: INFO: common: csv file: artifacts/data_transformation/transformed_data.csv saved successfully]
+[2024-12-10 11:30:15,565: INFO: main: >>>>>>> stage Data Transforamtion Stage completed <<<<<<<<
+
+=================x]
+[2024-12-10 11:30:15,565: INFO: main: >>>>>>> stage MOdel training Stage started <<<<<<<<]
+[2024-12-10 11:30:15,581: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 11:30:15,581: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 11:30:15,583: INFO: common: Directory artifacts created successfully]
+[2024-12-10 11:30:15,584: INFO: common: Directory artifacts/model_trainer created successfully]
+[2024-12-10 11:31:22,884: INFO: common: csv file: artifacts/model_trainer/test_data.csv saved successfully]
+[2024-12-10 11:31:22,890: INFO: main: >>>>>>> stage MOdel training Stage completed <<<<<<<<
+
+=================x]
+[2024-12-10 11:31:22,890: INFO: main: >>>>>>> stage MOdel prediction Stage started <<<<<<<<]
+[2024-12-10 11:31:22,890: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 11:31:22,896: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 11:31:22,897: INFO: common: Directory artifacts created successfully]
+[2024-12-10 11:31:22,897: INFO: common: Directory artifacts/model_prediction created successfully]
+[2024-12-10 11:31:25,191: ERROR: main: float() argument must be a string or a real number, not 'dict']
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 52, in <module>
+    model_prediction.initiate_prediction()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_05_prediction_pipeline.py", line 16, in initiate_prediction
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_05_prediction_pipeline.py", line 14, in initiate_prediction
+    predictor.forecast_30_days()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\model_prediction.py", line 67, in forecast_30_days
+    predictions = self.predict_next_30_days(model, last_known_data, scaler, n_days=30)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\model_prediction.py", line 41, in predict_next_30_days
+    predictions = scaler.inverse_transform(np.array(predictions).reshape(-1, 10))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda3\Lib\site-packages\sklearn\preprocessing\_data.py", line 565, in inverse_transform
+    X = check_array(
+        ^^^^^^^^^^^^
+  File "D:\anaconda3\Lib\site-packages\sklearn\utils\validation.py", line 997, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda3\Lib\site-packages\sklearn\utils\_array_api.py", line 521, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'dict'
+[2024-12-10 11:53:02,575: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-10 11:53:02,575: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-10 11:53:06,527: INFO: main: >>>>>>> stage MOdel prediction Stage started <<<<<<<<]
+[2024-12-10 11:53:06,529: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-10 11:53:06,529: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-10 11:53:06,529: INFO: common: Directory artifacts created successfully]
+[2024-12-10 11:53:06,529: INFO: common: Directory artifacts/model_prediction created successfully]
+[2024-12-10 11:53:08,980: INFO: model_prediction: Predictions saved successfully to artifacts/model_prediction/predictions.csv]
+[2024-12-10 11:53:27,936: INFO: model_prediction: Plot saved successfully as artifacts/model_prediction/forecast_plot.jpeg]
+[2024-12-10 11:53:27,936: INFO: main: >>>>>>> stage MOdel prediction Stage completed <<<<<<<<
+
+=================x]

@@ -3,6 +3,7 @@ from src.stockpredictor.pipeline.stage_01_data_ingestion import DataIngestionTra
 from src.stockpredictor.pipeline.stage_02_data_validation import DataValidationTrainingPipeline
 from src.stockpredictor.pipeline.stage_03_data_transformation import DataTransformationTrainingPipeline
 from src.stockpredictor.pipeline.stage_04_model_training import ModelTrainingPipeline
+from src.stockpredictor.pipeline.stage_05_prediction_pipeline import ModelPredictionPipeline
 
 # STAGE_NAME = "Data Ingestion Stage"
 # try:
@@ -34,11 +35,21 @@ from src.stockpredictor.pipeline.stage_04_model_training import ModelTrainingPip
 #     logger.exception(e)
 #     raise e
 
-STAGE_NAME = "MOdel training Stage"
+# STAGE_NAME = "MOdel training Stage"
+# try:
+#     logger.info(f">>>>>>> stage {STAGE_NAME} started <<<<<<<<")
+#     model_training = ModelTrainingPipeline()
+#     model_training.initiate_model_training()
+#     logger.info(f">>>>>>> stage {STAGE_NAME} completed <<<<<<<<\n\n=================x")
+# except Exception as e:
+#     logger.exception(e)
+#     raise e
+
+STAGE_NAME = "MOdel prediction Stage"
 try:
     logger.info(f">>>>>>> stage {STAGE_NAME} started <<<<<<<<")
-    model_training = ModelTrainingPipeline()
-    model_training.initiate_model_training()
+    model_prediction = ModelPredictionPipeline()
+    model_prediction.initiate_prediction()
     logger.info(f">>>>>>> stage {STAGE_NAME} completed <<<<<<<<\n\n=================x")
 except Exception as e:
     logger.exception(e)

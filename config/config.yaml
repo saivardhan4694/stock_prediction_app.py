@@ -28,4 +28,12 @@ model_trainer:
   root_dir: artifacts/model_trainer
   training_input: artifacts/data_transformation/transformed_data.csv
   lstm_model: artifacts/model_trainer/lstm_model.keras
-  
+  test_data_path: artifacts/model_trainer/test_data.csv
+
+model_prediction:
+  root_dir: artifacts/model_prediction
+  model: artifacts/model_trainer/lstm_model.keras
+  test_input: artifacts/model_trainer/test_data.csv
+  forecast_input: artifacts/data_transformation/transformed_data.csv
+  predictions_output: artifacts/model_prediction/predictions.csv
+  plot_output: artifacts/model_prediction/forecast_plot.jpeg

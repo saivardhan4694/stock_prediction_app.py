@@ -3,7 +3,8 @@ from src.stockpredictor.constants.__init import *
 from src.stockpredictor.entity import (DataIngestionConfig,
                                        DataValidationConfig,
                                        DataTransformationConfig,
-                                       ModelTrainingConfig)
+                                       ModelTrainingConfig,
+                                       ModelPredictionConfig)
 from src.stockpredictor.utils.common import read_yaml, create_directories
 
 class ConfigurationManager:
@@ -66,8 +67,9 @@ class ConfigurationManager:
             root_dir = config.root_dir,
             training_input = config.training_input,
             lstm_model = config.lstm_model,
+            test_data_path= config.test_data_path,
             arima_p = params.arima.p,
-            arima_d = params.arima.d ,
+            arima_d = params.arima.d,
             arima_q = params.arima.q,
             xgboost_n_estimators = params.xgboost.n_estimators,
             xgboost_learning_rate = params.xgboost.learning_rate ,
@@ -81,3 +83,20 @@ class ConfigurationManager:
         )
 
         return model_trainer_config
+    
+    def get_model_prediction_config(self):
+        config = self.config.model_prediction
+
+        create_directories([config.root_dir])
+
+        model_prediction_config = ModelPredictionConfig(
+            root_dir =  config.root_dir,
+            model= config.model,
+            test_input = config.test_input,
+            forecast_input = config.forecast_input,
+            predictions_output= config.predictions_output,
+            plot_output= config.plot_output
+        )
+
+        return model_prediction_config
+        

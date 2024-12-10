@@ -3,14 +3,13 @@ from src.stockpredictor.logging.coustom_log import logger
 from src.stockpredictor.entity import ModelTrainingConfig
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-from statsmodels.tsa.arima.model import ARIMA
-import xgboost as xgb
 from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 from keras.layers import Dense, Dropout, LSTM
 from keras.models import Sequential
+from keras.callbacks import EarlyStopping
+
 
 class ModelTrainer:
     def __init__(self, config: ModelTrainingConfig) -> None:
@@ -26,6 +25,7 @@ class ModelTrainer:
         model.add(Dropout(0.4))
         model.add(LSTM(units= 120, activation = "relu"))
         model.add(Dropout(0.5))
+        model.add(Dense(units = 10))
 
         model.compile(optimizer = "adam", loss = "mean_squared_error")
 
@@ -34,13 +34,16 @@ class ModelTrainer:
     def train_LSTM_model(self):
         # Load the transformed data
         stock_data = pd.read_csv(self.config.training_input)
+        
+        features = ['Close', 'moving_avg_10', 'moving_avg_30', 'rsi', 'volatility_5', 'volatility_10', 'atr', 'price_change_pct', 'day_of_week', 'month']
+        stock_data = stock_data[features]
 
         # Split into training and test sets
-        train_data = pd.DataFrame(stock_data.Close[0: int(len(stock_data)*0.80)])
-        test_data = pd.DataFrame(stock_data.Close[int(len(stock_data)*0.80): len(stock_data)])
+        train_data = stock_data[0: int(len(stock_data)*0.80)]
+        test_data = stock_data[int(len(stock_data)*0.80):]
 
         # Feature scaling
-        scaler = MinMaxScaler(feature_range=(0,1))
+        scaler = MinMaxScaler(feature_range=(0, 1))
         scaled_train_data = scaler.fit_transform(train_data)
 
         # Prepare data for LSTM
@@ -50,12 +53,12 @@ class ModelTrainer:
         # Using 100 previous days to predict the next day
         for i in range(100, scaled_train_data.shape[0]):
             x.append(scaled_train_data[i-100:i])  # 100 previous days as features
-            y.append(scaled_train_data[i, 0])     # Next day's closing price as target
+            y.append(scaled_train_data[i, 0])     # Next day's closing price as target (for regression task)
 
         x, y = np.array(x), np.array(y)
 
         # Reshape x to be 3D for LSTM input: [samples, time steps, features]
-        x = np.reshape(x, (x.shape[0], x.shape[1], 1))
+        x = np.reshape(x, (x.shape[0], x.shape[1], x.shape[2]))
 
         # Build and compile LSTM model
         lstm_model = self.build_and_complile_lstm(input_shape=(x.shape[1], x.shape[2]))
@@ -64,8 +67,16 @@ class ModelTrainer:
         y = np.reshape(y, (y.shape[0], 1))
 
         # Train the model
-        lstm_model.fit(x, y, epochs=self.config.lstm_epochs, batch_size=self.config.lstm_batch_size, verbose=self.config.lstm_verbose)
-        lstm_model.save(self.config.lstm_model)
+        early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
+        lstm_model.fit(x, y, epochs=self.config.lstm_epochs, batch_size=self.config.lstm_batch_size, verbose=self.config.lstm_verbose, validation_split=0.2, callbacks=[early_stopping])
+
+        # Save the model
+        if lstm_model.save(self.config.lstm_model):
+            logger.info("LSTM MODEL SAVED SUCCESSFULLY.")
+
+        # Save the test data (optional, if needed for further evaluation)
+        save_as_csv(test_data, self.config.test_data_path)
+
         
 
         

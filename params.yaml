@@ -1,0 +1,19 @@
+# ARIMA parameters
+arima:
+  p: 5
+  d: 1
+  q: 0
+
+# XGBoost parameters
+xgboost:
+  n_estimators: 100
+  learning_rate: 0.05
+  max_depth: 5
+  subsample: 0.8
+  colsample_bytree: 0.8
+  min_child_weight: 1
+
+LSTM:
+  epochs: 20
+  batch_size: 32
+  verbose : 1

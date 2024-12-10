@@ -1,0 +1,969 @@
+[2024-11-19 20:52:25,977: INFO: main: logging setup done.]
+[2024-11-21 12:05:25,437: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-21 12:05:25,437: ERROR: main: 'DataIngestionTrainingPipeline' object has no attribute 'main']
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 8, in <module>
+    data_ingestion.main()
+AttributeError: 'DataIngestionTrainingPipeline' object has no attribute 'main'
+[2024-11-21 12:06:14,606: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-21 12:06:14,606: ERROR: main: [Errno 22] Invalid argument: 'D:\repositories\\StockPredictorApp\\config\\config.yaml']
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 8, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_01_data_ingestion.py", line 16, in initiate_data_ingestion
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_01_data_ingestion.py", line 11, in initiate_data_ingestion
+    config = ConfigurationManager()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\config\configuration.py", line 11, in __init__
+    self.config = read_yaml(config_filepath)
+  File "D:\repositories\StockPredictorApp\stockvenv\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\utils\common.py", line 26, in read_yaml
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\utils\common.py", line 19, in read_yaml
+    with open(path_to_yaml) as yamlfile:
+OSError: [Errno 22] Invalid argument: 'D:\repositories\\StockPredictorApp\\config\\config.yaml'
+[2024-11-21 17:39:54,450: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-21 17:39:54,450: ERROR: main: [Errno 22] Invalid argument: 'D:\repositories\\StockPredictorApp\\config\\config.yaml']
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 8, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_01_data_ingestion.py", line 16, in initiate_data_ingestion
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_01_data_ingestion.py", line 11, in initiate_data_ingestion
+    config = ConfigurationManager()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\config\configuration.py", line 11, in __init__
+    self.config = read_yaml(config_filepath)
+  File "D:\repositories\StockPredictorApp\stockvenv\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\utils\common.py", line 26, in read_yaml
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\utils\common.py", line 19, in read_yaml
+    with open(path_to_yaml) as yamlfile:
+OSError: [Errno 22] Invalid argument: 'D:\repositories\\StockPredictorApp\\config\\config.yaml'
+[2024-11-21 17:43:45,524: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-21 17:43:45,524: ERROR: main: [Errno 22] Invalid argument: 'D:\repositories\\StockPredictorApp\\config\\config.yaml']
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 8, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_01_data_ingestion.py", line 16, in initiate_data_ingestion
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_01_data_ingestion.py", line 11, in initiate_data_ingestion
+    config = ConfigurationManager()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\config\configuration.py", line 11, in __init__
+    self.config = read_yaml(config_filepath)
+  File "D:\repositories\StockPredictorApp\stockvenv\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\utils\common.py", line 28, in read_yaml
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\utils\common.py", line 21, in read_yaml
+    with open(path_to_yaml) as yamlfile:
+OSError: [Errno 22] Invalid argument: 'D:\repositories\\StockPredictorApp\\config\\config.yaml'
+[2024-11-21 17:46:35,075: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-21 17:46:35,082: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-21 17:46:35,082: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-21 17:46:35,082: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\utils\common.py", line 24, in read_yaml
+    return ConfigBox(data)
+  File "box\\box.py", line 296, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 8, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_01_data_ingestion.py", line 16, in initiate_data_ingestion
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_01_data_ingestion.py", line 11, in initiate_data_ingestion
+    config = ConfigurationManager()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\config\configuration.py", line 12, in __init__
+    self.params = read_yaml(params_filepath)
+  File "D:\repositories\StockPredictorApp\stockvenv\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\utils\common.py", line 26, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-11-21 17:47:10,999: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-21 17:47:11,013: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-21 17:47:11,013: INFO: common: Directory artifacts created successfully]
+[2024-11-21 17:47:11,014: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-11-21 17:47:11,870: ERROR: main: Argument path_to_csv of type <class 'str'> to <function save_as_csv at 0x0000016E3F21B0A0> does not match annotation type <class 'pathlib.Path'>]
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 8, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_01_data_ingestion.py", line 16, in initiate_data_ingestion
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_01_data_ingestion.py", line 14, in initiate_data_ingestion
+    data_ingestion.get_data()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\data_ingestion.py", line 23, in get_data
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\data_ingestion.py", line 20, in get_data
+    save_as_csv(dataframe = stock_dataframe, path_to_csv = self.config.raw_stock_data)
+  File "D:\repositories\StockPredictorApp\stockvenv\lib\site-packages\ensure\main.py", line 870, in __call__
+    raise EnsureError(msg.format(arg=arg, f=self.f, t=templ, valt=type(value)))
+ensure.main.EnsureError: Argument path_to_csv of type <class 'str'> to <function save_as_csv at 0x0000016E3F21B0A0> does not match annotation type <class 'pathlib.Path'>
+[2024-11-21 17:48:49,527: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-21 17:48:49,535: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-21 17:48:49,535: INFO: common: Directory artifacts created successfully]
+[2024-11-21 17:48:49,535: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-11-21 17:48:50,138: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-11-21 17:48:50,138: ERROR: main: isinstance() arg 2 must be a type, a tuple of types, or a union]
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 8, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_01_data_ingestion.py", line 16, in initiate_data_ingestion
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_01_data_ingestion.py", line 14, in initiate_data_ingestion
+    data_ingestion.get_data()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\data_ingestion.py", line 23, in get_data
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\data_ingestion.py", line 20, in get_data
+    save_as_csv(dataframe = stock_dataframe, path_to_csv = Path(self.config.raw_stock_data))
+  File "D:\repositories\StockPredictorApp\stockvenv\lib\site-packages\ensure\main.py", line 873, in __call__
+    if not isinstance(return_val, self.return_templ):
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+[2024-11-21 17:54:26,626: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-21 17:54:26,628: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-21 17:54:26,631: INFO: common: Directory artifacts created successfully]
+[2024-11-21 17:54:26,631: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-11-21 17:54:27,196: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-11-21 17:54:27,196: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-11-21 17:54:27,196: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-11-22 10:39:05,998: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 10:39:06,003: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 10:39:24,116: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 10:39:24,120: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 10:44:50,103: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 10:44:50,104: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 10:45:30,962: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 10:45:30,963: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 10:46:35,690: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 10:46:35,690: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 10:47:12,117: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 10:47:12,122: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 10:47:29,565: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 10:47:29,570: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 10:55:36,407: INFO: 1957478777: no.of columns in the data does not match the expected number.]
+[2024-11-22 10:56:12,593: INFO: 2256751153: no.of columns in the data does not match the expected number.]
+[2024-11-22 10:56:39,076: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 10:56:39,078: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 10:56:51,353: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 10:56:51,355: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 11:17:06,139: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-22 11:17:06,155: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 11:17:06,155: INFO: common: Directory artifacts created successfully]
+[2024-11-22 11:17:06,155: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-11-22 11:17:06,609: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-11-22 11:17:06,609: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-11-22 11:17:06,609: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-11-22 11:47:00,693: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 11:47:00,693: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 11:48:37,974: INFO: 3726745979: column Adj_close does not exist in the data.]
+[2024-11-22 11:49:15,178: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 11:49:15,183: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 11:49:17,966: INFO: 3726745979: column Adj close does not exist in the data.]
+[2024-11-22 11:49:53,973: INFO: 1974211511: column Adj close does not exist in the data.]
+[2024-11-22 11:50:39,846: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 11:50:39,848: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 11:56:44,338: INFO: 3052414801: data is valid]
+[2024-11-22 11:57:24,184: INFO: 3347178005: data is valid]
+[2024-11-22 12:14:14,425: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-22 12:14:14,425: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 12:14:14,443: INFO: common: Directory artifacts created successfully]
+[2024-11-22 12:14:14,443: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-11-22 12:14:14,903: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-11-22 12:14:14,919: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-11-22 12:14:14,919: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-11-22 12:14:14,919: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-11-22 12:14:14,924: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 12:14:14,924: INFO: common: Directory artifacts created successfully]
+[2024-11-22 12:14:14,926: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 12:14:14,934: INFO: data_validation: data is valid]
+[2024-11-22 12:14:14,955: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
+[2024-11-22 16:31:31,608: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 16:31:31,614: INFO: common: Directory artifacts created successfully]
+[2024-11-22 17:17:42,407: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 17:17:42,410: INFO: common: Directory artifacts created successfully]
+[2024-11-22 17:29:07,123: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-22 17:29:07,126: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 17:29:07,126: INFO: common: Directory artifacts created successfully]
+[2024-11-22 17:29:07,127: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-11-22 17:29:07,570: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-11-22 17:29:07,570: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-11-22 17:29:07,570: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-11-22 17:29:07,571: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-11-22 17:29:07,573: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 17:29:07,573: INFO: common: Directory artifacts created successfully]
+[2024-11-22 17:29:07,573: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 17:29:07,576: INFO: data_validation: data is valid]
+[2024-11-22 17:29:07,580: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
+[2024-11-22 17:30:16,306: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 17:30:16,307: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 17:31:24,650: INFO: 843191130: data is valid]
+[2024-11-22 17:31:37,271: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 17:31:37,273: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 17:31:40,448: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 17:31:40,449: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 17:31:44,083: INFO: 843191130: data is valid]
+[2024-11-22 17:39:41,031: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 17:39:41,032: INFO: common: Directory artifacts created successfully]
+[2024-11-22 17:43:33,252: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-22 17:43:33,254: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 17:43:33,255: INFO: common: Directory artifacts created successfully]
+[2024-11-22 17:43:33,281: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-11-22 17:43:33,739: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-11-22 17:43:33,739: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-11-22 17:43:33,739: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-11-22 17:43:33,740: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-11-22 17:43:33,742: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 17:43:33,742: INFO: common: Directory artifacts created successfully]
+[2024-11-22 17:43:33,743: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 17:43:33,746: INFO: data_validation: no.of columns in the data does not match the expected number.]
+[2024-11-22 17:43:33,747: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
+[2024-11-22 17:54:44,795: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-22 17:54:44,799: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 17:54:44,800: INFO: common: Directory artifacts created successfully]
+[2024-11-22 17:54:44,800: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-11-22 17:54:45,524: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-11-22 17:54:45,525: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-11-22 17:54:45,525: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-11-22 17:54:45,525: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-11-22 17:54:45,528: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 17:54:45,529: INFO: common: Directory artifacts created successfully]
+[2024-11-22 17:54:45,529: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 17:54:45,529: INFO: data_validation: data is valid]
+[2024-11-22 17:54:45,534: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
+[2024-11-22 17:58:49,146: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-22 17:58:49,156: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 17:58:49,156: INFO: common: Directory artifacts created successfully]
+[2024-11-22 17:58:49,162: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-11-22 17:58:49,660: ERROR: main: 'NVDA']
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\stockvenv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'NVDA'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_01_data_ingestion.py", line 16, in initiate_data_ingestion
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_01_data_ingestion.py", line 14, in initiate_data_ingestion
+    data_ingestion.get_data()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\data_ingestion.py", line 27, in get_data
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\data_ingestion.py", line 23, in get_data
+    stock_dataframe = stock_dataframe['NVDA']
+  File "D:\repositories\StockPredictorApp\stockvenv\lib\site-packages\pandas\core\frame.py", line 4101, in __getitem__
+    return self._getitem_multilevel(key)
+  File "D:\repositories\StockPredictorApp\stockvenv\lib\site-packages\pandas\core\frame.py", line 4159, in _getitem_multilevel
+    loc = self.columns.get_loc(key)
+  File "D:\repositories\StockPredictorApp\stockvenv\lib\site-packages\pandas\core\indexes\multi.py", line 3040, in get_loc
+    loc = self._get_level_indexer(key, level=0)
+  File "D:\repositories\StockPredictorApp\stockvenv\lib\site-packages\pandas\core\indexes\multi.py", line 3391, in _get_level_indexer
+    idx = self._get_loc_single_level_index(level_index, key)
+  File "D:\repositories\StockPredictorApp\stockvenv\lib\site-packages\pandas\core\indexes\multi.py", line 2980, in _get_loc_single_level_index
+    return level_index.get_loc(key)
+  File "D:\repositories\StockPredictorApp\stockvenv\lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'NVDA'
+[2024-11-22 17:59:15,433: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-22 17:59:15,439: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 17:59:15,439: INFO: common: Directory artifacts created successfully]
+[2024-11-22 17:59:15,439: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-11-22 17:59:15,888: ERROR: main: 'NVDA']
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\stockvenv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'NVDA'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_01_data_ingestion.py", line 16, in initiate_data_ingestion
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_01_data_ingestion.py", line 14, in initiate_data_ingestion
+    data_ingestion.get_data()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\data_ingestion.py", line 27, in get_data
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\data_ingestion.py", line 23, in get_data
+    stock_dataframe = stock_dataframe[self.stock_name]
+  File "D:\repositories\StockPredictorApp\stockvenv\lib\site-packages\pandas\core\frame.py", line 4101, in __getitem__
+    return self._getitem_multilevel(key)
+  File "D:\repositories\StockPredictorApp\stockvenv\lib\site-packages\pandas\core\frame.py", line 4159, in _getitem_multilevel
+    loc = self.columns.get_loc(key)
+  File "D:\repositories\StockPredictorApp\stockvenv\lib\site-packages\pandas\core\indexes\multi.py", line 3040, in get_loc
+    loc = self._get_level_indexer(key, level=0)
+  File "D:\repositories\StockPredictorApp\stockvenv\lib\site-packages\pandas\core\indexes\multi.py", line 3391, in _get_level_indexer
+    idx = self._get_loc_single_level_index(level_index, key)
+  File "D:\repositories\StockPredictorApp\stockvenv\lib\site-packages\pandas\core\indexes\multi.py", line 2980, in _get_loc_single_level_index
+    return level_index.get_loc(key)
+  File "D:\repositories\StockPredictorApp\stockvenv\lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'NVDA'
+[2024-11-22 18:00:50,989: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-22 18:00:51,005: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 18:00:51,005: INFO: common: Directory artifacts created successfully]
+[2024-11-22 18:00:51,005: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-11-22 18:00:51,465: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-11-22 18:00:51,465: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-11-22 18:00:51,465: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-11-22 18:00:51,465: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-11-22 18:00:51,473: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 18:00:51,473: INFO: common: Directory artifacts created successfully]
+[2024-11-22 18:00:51,474: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 18:00:51,476: INFO: data_validation: no.of columns in the data does not match the expected number.]
+[2024-11-22 18:00:51,477: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
+[2024-11-22 18:01:39,623: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-22 18:01:39,639: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 18:01:39,639: INFO: common: Directory artifacts created successfully]
+[2024-11-22 18:01:39,639: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-11-22 18:01:40,074: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-11-22 18:01:40,074: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-11-22 18:01:40,074: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-11-22 18:01:40,074: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-11-22 18:01:40,085: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-22 18:01:40,085: INFO: common: Directory artifacts created successfully]
+[2024-11-22 18:01:40,085: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-22 18:01:40,088: INFO: data_validation: data is valid]
+[2024-11-22 18:01:40,096: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
+[2024-11-23 11:05:53,956: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:05:53,972: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:10:02,900: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:10:02,900: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:15:33,960: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-23 11:15:33,967: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:15:33,967: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:15:33,967: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-11-23 11:15:34,515: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-11-23 11:15:34,515: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-11-23 11:15:34,515: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-11-23 11:15:34,515: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-11-23 11:15:34,522: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:15:34,523: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:15:34,523: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-23 11:15:34,524: INFO: data_validation: data is valid]
+[2024-11-23 11:15:34,530: INFO: common: csv file: artifacts/data_validation/validated_data.csv saved successfully]
+[2024-11-23 11:15:34,536: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
+[2024-11-23 11:18:21,247: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-23 11:18:21,250: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:18:21,250: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:18:21,252: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-11-23 11:18:21,783: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-11-23 11:18:21,783: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-11-23 11:18:21,783: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-11-23 11:18:21,785: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-11-23 11:18:21,787: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:18:21,787: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:18:21,789: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-23 11:18:21,797: INFO: data_validation: data is valid]
+[2024-11-23 11:18:21,801: INFO: common: csv file: artifacts/data_validation/validated_data.csv saved successfully]
+[2024-11-23 11:18:21,801: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
+[2024-11-23 11:20:11,428: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:20:11,430: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:20:58,833: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:20:58,838: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:21:27,923: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:21:27,924: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:24:10,930: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:24:10,934: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:24:32,399: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:24:32,402: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:25:10,203: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:25:10,207: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:25:10,221: INFO: common: Directory artifacts/data_transformation created successfully]
+[2024-11-23 11:27:51,890: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:27:51,891: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-23 11:29:09,389: INFO: 2968353827: data is valid]
+[2024-11-23 11:43:56,946: INFO: 3381893042: Data validation successful. Report saved to artifacts/data_validation/validation_report.txt]
+[2024-11-23 11:45:03,921: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-23 11:45:03,921: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:45:03,921: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:45:03,921: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-11-23 11:45:04,556: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-11-23 11:45:04,556: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-11-23 11:45:04,556: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-11-23 11:45:04,556: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-11-23 11:45:04,562: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:45:04,562: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:45:04,580: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-23 11:45:04,598: INFO: data_validation: Data validation successful. Report saved to artifacts/data_validation/validation_report.txt]
+[2024-11-23 11:45:04,609: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
+[2024-11-23 11:46:05,139: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:46:05,145: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:46:05,145: INFO: common: Directory artifacts/data_transformation created successfully]
+[2024-11-23 11:46:28,231: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-23 11:46:28,235: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:46:28,235: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:46:28,249: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-11-23 11:46:30,126: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-11-23 11:46:30,126: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-11-23 11:46:30,127: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-11-23 11:46:30,127: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-11-23 11:46:30,132: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:46:30,133: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:46:30,134: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-23 11:46:30,149: INFO: data_validation: Data validation successful. Report saved to artifacts/data_validation/validation_report.txt]
+[2024-11-23 11:46:30,172: INFO: common: csv file: artifacts/data_validation/validated_data.csv saved successfully]
+[2024-11-23 11:46:30,173: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
+[2024-11-23 11:46:36,196: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:46:36,198: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:46:36,201: INFO: common: Directory artifacts/data_transformation created successfully]
+[2024-11-23 11:55:26,292: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-23 11:55:26,302: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:55:26,314: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:55:26,314: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-11-23 11:55:26,874: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-11-23 11:55:26,874: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-11-23 11:55:26,874: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-11-23 11:55:26,874: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-11-23 11:55:26,881: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:55:26,881: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:55:26,881: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-23 11:55:26,910: INFO: data_validation: Data validation successful. Report saved to artifacts/data_validation/validation_report.txt]
+[2024-11-23 11:55:26,923: INFO: common: csv file: artifacts/data_validation/validated_data.csv saved successfully]
+[2024-11-23 11:55:26,928: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
+[2024-11-23 11:55:26,928: INFO: main: >>>>>>> stage Data Transforamtion Stage started <<<<<<<<]
+[2024-11-23 11:55:26,934: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 11:55:26,934: INFO: common: Directory artifacts created successfully]
+[2024-11-23 11:55:26,936: INFO: common: Directory artifacts/data_transformation created successfully]
+[2024-11-23 11:55:27,013: INFO: common: csv file: artifacts/data_transformation/transformed_data.csv saved successfully]
+[2024-11-23 11:55:27,013: INFO: main: >>>>>>> stage Data Transforamtion Stage completed <<<<<<<<
+
+=================x]
+[2024-11-23 12:05:24,620: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-11-23 12:05:24,622: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 12:05:24,622: INFO: common: Directory artifacts created successfully]
+[2024-11-23 12:05:24,625: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-11-23 12:05:25,166: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-11-23 12:05:25,166: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-11-23 12:05:25,166: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-11-23 12:05:25,182: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-11-23 12:05:25,188: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 12:05:25,189: INFO: common: Directory artifacts created successfully]
+[2024-11-23 12:05:25,201: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-11-23 12:05:25,222: INFO: data_validation: Data validation successful. Report saved to artifacts/data_validation/validation_report.txt]
+[2024-11-23 12:05:25,231: INFO: common: csv file: artifacts/data_validation/validated_data.csv saved successfully]
+[2024-11-23 12:05:25,232: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
+[2024-11-23 12:05:25,232: INFO: main: >>>>>>> stage Data Transforamtion Stage started <<<<<<<<]
+[2024-11-23 12:05:25,238: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-11-23 12:05:25,238: INFO: common: Directory artifacts created successfully]
+[2024-11-23 12:05:25,238: INFO: common: Directory artifacts/data_transformation created successfully]
+[2024-11-23 12:05:25,297: INFO: common: csv file: artifacts/data_transformation/transformed_data.csv saved successfully]
+[2024-11-23 12:05:25,297: INFO: main: >>>>>>> stage Data Transforamtion Stage completed <<<<<<<<
+
+=================x]
+[2024-12-09 13:19:45,119: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-09 13:19:45,119: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-09 13:19:46,730: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-12-09 13:19:46,730: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 13:19:46,730: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 13:19:46,735: INFO: common: Directory artifacts created successfully]
+[2024-12-09 13:19:46,735: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-12-09 13:19:47,389: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-12-09 13:19:47,389: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-12-09 13:19:47,389: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-12-09 13:19:47,389: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-12-09 13:19:47,392: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 13:19:47,394: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 13:19:47,394: INFO: common: Directory artifacts created successfully]
+[2024-12-09 13:19:47,394: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-12-09 13:19:47,397: INFO: data_validation: Data validation successful. Report saved to artifacts/data_validation/validation_report.txt]
+[2024-12-09 13:19:47,401: INFO: common: csv file: artifacts/data_validation/validated_data.csv saved successfully]
+[2024-12-09 13:19:47,401: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
+[2024-12-09 13:19:47,403: INFO: main: >>>>>>> stage Data Transforamtion Stage started <<<<<<<<]
+[2024-12-09 13:19:47,404: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 13:19:47,405: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 13:19:47,406: INFO: common: Directory artifacts created successfully]
+[2024-12-09 13:19:47,406: INFO: common: Directory artifacts/data_transformation created successfully]
+[2024-12-09 13:19:47,416: INFO: common: csv file: artifacts/data_transformation/transformed_data.csv saved successfully]
+[2024-12-09 13:19:47,416: INFO: main: >>>>>>> stage Data Transforamtion Stage completed <<<<<<<<
+
+=================x]
+[2024-12-09 15:39:42,607: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-09 15:39:42,607: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-09 15:39:44,595: INFO: font_manager: generated new fontManager]
+[2024-12-09 15:39:48,938: INFO: main: >>>>>>> stage MOdel training Stage started <<<<<<<<]
+[2024-12-09 15:39:48,941: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 15:39:48,943: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 15:39:48,943: INFO: common: Directory artifacts created successfully]
+[2024-12-09 15:39:48,943: ERROR: main: 'function' object has no attribute 'training_input']
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 41, in <module>
+    model_training.initiate_model_training()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_04_model_training.py", line 16, in initiate_model_training
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_04_model_training.py", line 14, in initiate_model_training
+    model_trainer.train_LSTM_model()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\model_trainer.py", line 19, in train_LSTM_model
+    stock_data = pd.read_csv(self.config.training_input)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'training_input'
+[2024-12-09 15:41:21,589: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-09 15:41:21,589: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-09 15:41:23,483: INFO: main: >>>>>>> stage MOdel training Stage started <<<<<<<<]
+[2024-12-09 15:41:23,498: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 15:41:23,500: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 15:41:23,500: INFO: common: Directory artifacts created successfully]
+[2024-12-09 15:41:23,540: INFO: main: >>>>>>> stage MOdel training Stage completed <<<<<<<<
+
+=================x]
+[2024-12-09 15:42:15,597: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-09 15:42:15,597: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-09 15:42:17,522: INFO: main: >>>>>>> stage MOdel training Stage started <<<<<<<<]
+[2024-12-09 15:42:17,525: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 15:42:17,525: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 15:42:17,525: INFO: common: Directory artifacts created successfully]
+[2024-12-09 15:42:17,525: ERROR: main: 'function' object has no attribute 'arima_d']
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 41, in <module>
+    model_training.initiate_model_training()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_04_model_training.py", line 16, in initiate_model_training
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_04_model_training.py", line 13, in initiate_model_training
+    model_trainer = ModelTrainer(model_training_config)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\model_trainer.py", line 16, in __init__
+    print(self.config.arima_d)
+          ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'arima_d'
+[2024-12-09 15:45:00,134: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-09 15:45:00,134: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-09 15:45:02,306: INFO: main: >>>>>>> stage MOdel training Stage started <<<<<<<<]
+[2024-12-09 15:45:02,306: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 15:45:02,306: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 15:45:02,311: INFO: common: Directory artifacts created successfully]
+[2024-12-09 15:45:02,312: INFO: common: Directory artifacts/model_trainer created successfully]
+[2024-12-09 15:45:02,312: ERROR: main: "'ConfigBox' object has no attribute 'n_estimmin_child_weightators'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 593, in box.box.Box.__getitem__
+KeyError: 'n_estimmin_child_weightators'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 632, in box.box.Box.__getattr__
+  File "box\\box.py", line 620, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'n_estimmin_child_weightators'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 634, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'n_estimmin_child_weightators'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 648, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'n_estimmin_child_weightators'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 593, in box.box.Box.__getitem__
+KeyError: 'n_estimmin_child_weightators'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 632, in box.box.Box.__getattr__
+  File "box\\box.py", line 620, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'n_estimmin_child_weightators'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 634, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'n_estimmin_child_weightators'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 41, in <module>
+    model_training.initiate_model_training()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_04_model_training.py", line 16, in initiate_model_training
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_04_model_training.py", line 12, in initiate_model_training
+    model_training_config = config.get_model_trainer_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\config\configuration.py", line 78, in get_model_trainer_config
+    xgboost_min_child_weight = params.xgboost.n_estimmin_child_weightators,
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 648, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'n_estimmin_child_weightators'"
+[2024-12-09 15:47:03,847: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-09 15:47:03,847: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-09 15:47:05,934: INFO: main: >>>>>>> stage MOdel training Stage started <<<<<<<<]
+[2024-12-09 15:47:05,936: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 15:47:05,936: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 15:47:05,936: INFO: common: Directory artifacts created successfully]
+[2024-12-09 15:47:05,936: INFO: common: Directory artifacts/model_trainer created successfully]
+[2024-12-09 15:47:05,958: INFO: main: >>>>>>> stage MOdel training Stage completed <<<<<<<<
+
+=================x]
+[2024-12-09 16:08:03,084: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-09 16:08:03,084: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-09 16:08:15,033: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-12-09 16:08:15,038: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 16:08:15,038: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 16:08:15,038: INFO: common: Directory artifacts created successfully]
+[2024-12-09 16:08:15,038: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-12-09 16:08:15,505: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-12-09 16:08:15,505: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-12-09 16:08:15,505: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-12-09 16:08:15,505: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-12-09 16:08:15,507: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 16:08:15,509: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 16:08:15,509: INFO: common: Directory artifacts created successfully]
+[2024-12-09 16:08:15,509: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-12-09 16:08:15,519: INFO: data_validation: Data validation successful. Report saved to artifacts/data_validation/validation_report.txt]
+[2024-12-09 16:08:15,526: INFO: common: csv file: artifacts/data_validation/validated_data.csv saved successfully]
+[2024-12-09 16:08:15,526: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
+[2024-12-09 16:08:15,526: INFO: main: >>>>>>> stage Data Transforamtion Stage started <<<<<<<<]
+[2024-12-09 16:08:15,529: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 16:08:15,531: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 16:08:15,531: INFO: common: Directory artifacts created successfully]
+[2024-12-09 16:08:15,531: INFO: common: Directory artifacts/data_transformation created successfully]
+[2024-12-09 16:08:15,557: INFO: common: csv file: artifacts/data_transformation/transformed_data.csv saved successfully]
+[2024-12-09 16:08:15,558: INFO: main: >>>>>>> stage Data Transforamtion Stage completed <<<<<<<<
+
+=================x]
+[2024-12-09 16:14:04,507: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-09 16:14:04,507: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-09 16:14:09,647: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-12-09 16:14:09,651: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 16:14:09,651: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 16:14:09,651: INFO: common: Directory artifacts created successfully]
+[2024-12-09 16:14:09,651: INFO: common: Directory artifacts/data_ingestion created successfully]
+[2024-12-09 16:14:10,430: INFO: common: csv file: artifacts\data_ingestion\raw_data.csv saved successfully]
+[2024-12-09 16:14:10,434: INFO: data_ingestion: Data Ingested for NVDA]
+[2024-12-09 16:14:10,434: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<<
+
+=================x]
+[2024-12-09 16:14:10,435: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<<]
+[2024-12-09 16:14:10,436: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 16:14:10,438: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 16:14:10,438: INFO: common: Directory artifacts created successfully]
+[2024-12-09 16:14:10,438: INFO: common: Directory artifacts/data_validation created successfully]
+[2024-12-09 16:14:10,451: INFO: data_validation: Data validation successful. Report saved to artifacts/data_validation/validation_report.txt]
+[2024-12-09 16:14:10,470: INFO: common: csv file: artifacts/data_validation/validated_data.csv saved successfully]
+[2024-12-09 16:14:10,470: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<<
+
+=================x]
+[2024-12-09 16:14:10,470: INFO: main: >>>>>>> stage Data Transforamtion Stage started <<<<<<<<]
+[2024-12-09 16:14:10,473: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 16:14:10,476: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 16:14:10,476: INFO: common: Directory artifacts created successfully]
+[2024-12-09 16:14:10,476: INFO: common: Directory artifacts/data_transformation created successfully]
+[2024-12-09 16:14:10,555: INFO: common: csv file: artifacts/data_transformation/transformed_data.csv saved successfully]
+[2024-12-09 16:14:10,555: INFO: main: >>>>>>> stage Data Transforamtion Stage completed <<<<<<<<
+
+=================x]
+[2024-12-09 16:22:00,613: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-09 16:22:00,613: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-09 16:22:05,887: INFO: main: >>>>>>> stage MOdel training Stage started <<<<<<<<]
+[2024-12-09 16:22:05,891: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 16:22:05,891: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 16:22:05,894: INFO: common: Directory artifacts created successfully]
+[2024-12-09 16:22:05,895: INFO: common: Directory artifacts/model_trainer created successfully]
+[2024-12-09 16:22:05,895: ERROR: main: "'ConfigBox' object has no attribute 'lstm'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 593, in box.box.Box.__getitem__
+KeyError: 'lstm'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 632, in box.box.Box.__getattr__
+  File "box\\box.py", line 620, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'lstm'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 634, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'lstm'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 648, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'lstm'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 593, in box.box.Box.__getitem__
+KeyError: 'lstm'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 632, in box.box.Box.__getattr__
+  File "box\\box.py", line 620, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'lstm'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 634, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'lstm'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 41, in <module>
+    model_training.initiate_model_training()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_04_model_training.py", line 16, in initiate_model_training
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_04_model_training.py", line 12, in initiate_model_training
+    model_training_config = config.get_model_trainer_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\config\configuration.py", line 79, in get_model_trainer_config
+    lstm_batch_size=params.lstm.batch_size,
+                    ^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 648, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'lstm'"
+[2024-12-09 16:23:21,040: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-09 16:23:21,040: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-09 16:23:25,948: INFO: main: >>>>>>> stage MOdel training Stage started <<<<<<<<]
+[2024-12-09 16:23:25,949: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 16:23:25,951: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 16:23:25,953: INFO: common: Directory artifacts created successfully]
+[2024-12-09 16:23:25,953: INFO: common: Directory artifacts/model_trainer created successfully]
+[2024-12-09 16:23:25,982: ERROR: main: name 'x' is not defined]
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 41, in <module>
+    model_training.initiate_model_training()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_04_model_training.py", line 16, in initiate_model_training
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_04_model_training.py", line 14, in initiate_model_training
+    model_trainer.train_LSTM_model()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\model_trainer.py", line 54, in train_LSTM_model
+    lstm_model = self.build_and_complile_lstm()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\model_trainer.py", line 21, in build_and_complile_lstm
+    model.add(LSTM(units = 50, activation = "relu", return_sequences = True, input_shape = ((x.shape[1], 1))))
+                                                                                             ^
+NameError: name 'x' is not defined
+[2024-12-09 16:24:55,817: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-09 16:24:55,818: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-09 16:25:01,160: INFO: main: >>>>>>> stage MOdel training Stage started <<<<<<<<]
+[2024-12-09 16:25:01,163: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 16:25:01,166: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 16:25:01,166: INFO: common: Directory artifacts created successfully]
+[2024-12-09 16:25:01,166: INFO: common: Directory artifacts/model_trainer created successfully]
+[2024-12-09 16:25:01,278: ERROR: main: 'Sequential' object has no attribute 'dropout']
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 41, in <module>
+    model_training.initiate_model_training()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_04_model_training.py", line 16, in initiate_model_training
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_04_model_training.py", line 14, in initiate_model_training
+    model_trainer.train_LSTM_model()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\model_trainer.py", line 54, in train_LSTM_model
+    lstm_model = self.build_and_complile_lstm(input_shape=((x.shape[1], 1)))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\model_trainer.py", line 22, in build_and_complile_lstm
+    model.dropout(0.2)
+    ^^^^^^^^^^^^^
+AttributeError: 'Sequential' object has no attribute 'dropout'
+[2024-12-09 16:25:33,007: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-09 16:25:33,007: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-09 16:25:38,552: INFO: main: >>>>>>> stage MOdel training Stage started <<<<<<<<]
+[2024-12-09 16:25:38,555: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 16:25:38,556: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 16:25:38,556: INFO: common: Directory artifacts created successfully]
+[2024-12-09 16:25:38,556: INFO: common: Directory artifacts/model_trainer created successfully]
+[2024-12-09 16:25:38,653: ERROR: main: 'Sequential' object has no attribute 'Dropout']
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 41, in <module>
+    model_training.initiate_model_training()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_04_model_training.py", line 16, in initiate_model_training
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_04_model_training.py", line 14, in initiate_model_training
+    model_trainer.train_LSTM_model()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\model_trainer.py", line 54, in train_LSTM_model
+    lstm_model = self.build_and_complile_lstm(input_shape=((x.shape[1], 1)))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\model_trainer.py", line 22, in build_and_complile_lstm
+    model.Dropout(0.2)
+    ^^^^^^^^^^^^^
+AttributeError: 'Sequential' object has no attribute 'Dropout'
+[2024-12-09 16:26:38,418: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-09 16:26:38,418: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-09 16:26:43,548: INFO: main: >>>>>>> stage MOdel training Stage started <<<<<<<<]
+[2024-12-09 16:26:43,552: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 16:26:43,553: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 16:26:43,553: INFO: common: Directory artifacts created successfully]
+[2024-12-09 16:26:43,553: INFO: common: Directory artifacts/model_trainer created successfully]
+[2024-12-09 16:26:44,237: ERROR: main: Could not interpret loss identifier: mean_sqaured_error]
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 41, in <module>
+    model_training.initiate_model_training()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_04_model_training.py", line 16, in initiate_model_training
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_04_model_training.py", line 14, in initiate_model_training
+    model_trainer.train_LSTM_model()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\model_trainer.py", line 55, in train_LSTM_model
+    lstm_model.fit(x, y, epochs = self.config.lstm_epochs, batch_size = self.config.lstm_batch_size, verbose = self.config.lstm_verbose)
+  File "C:\Users\user\AppData\Roaming\Python\Python312\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\user\AppData\Roaming\Python\Python312\site-packages\keras\src\losses\__init__.py", line 207, in get
+    raise ValueError(f"Could not interpret loss identifier: {identifier}")
+ValueError: Could not interpret loss identifier: mean_sqaured_error
+[2024-12-09 16:27:05,310: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-09 16:27:05,310: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-09 16:27:10,772: INFO: main: >>>>>>> stage MOdel training Stage started <<<<<<<<]
+[2024-12-09 16:27:10,775: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 16:27:10,779: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 16:27:10,779: INFO: common: Directory artifacts created successfully]
+[2024-12-09 16:27:10,781: INFO: common: Directory artifacts/model_trainer created successfully]
+[2024-12-09 16:27:16,953: ERROR: main: Graph execution error:
+
+Detected at node gradient_tape/compile_loss/mean_squared_error/sub/BroadcastGradientArgs defined at (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 41, in <module>
+
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_04_model_training.py", line 14, in initiate_model_training
+
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\model_trainer.py", line 55, in train_LSTM_model
+
+  File "C:\Users\user\AppData\Roaming\Python\Python312\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "C:\Users\user\AppData\Roaming\Python\Python312\site-packages\keras\src\backend\tensorflow\trainer.py", line 368, in fit
+
+  File "C:\Users\user\AppData\Roaming\Python\Python312\site-packages\keras\src\backend\tensorflow\trainer.py", line 216, in function
+
+  File "C:\Users\user\AppData\Roaming\Python\Python312\site-packages\keras\src\backend\tensorflow\trainer.py", line 129, in multi_step_on_iterator
+
+  File "C:\Users\user\AppData\Roaming\Python\Python312\site-packages\keras\src\backend\tensorflow\trainer.py", line 110, in one_step_on_data
+
+  File "C:\Users\user\AppData\Roaming\Python\Python312\site-packages\keras\src\backend\tensorflow\trainer.py", line 75, in train_step
+
+Incompatible shapes: [32] vs. [32,120]
+	 [[{{node gradient_tape/compile_loss/mean_squared_error/sub/BroadcastGradientArgs}}]] [Op:__inference_multi_step_on_iterator_6807]]
+Traceback (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 41, in <module>
+    model_training.initiate_model_training()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_04_model_training.py", line 16, in initiate_model_training
+    raise e
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_04_model_training.py", line 14, in initiate_model_training
+    model_trainer.train_LSTM_model()
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\model_trainer.py", line 55, in train_LSTM_model
+    lstm_model.fit(x, y, epochs = self.config.lstm_epochs, batch_size = self.config.lstm_batch_size, verbose = self.config.lstm_verbose)
+  File "C:\Users\user\AppData\Roaming\Python\Python312\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\user\AppData\Roaming\Python\Python312\site-packages\tensorflow\python\eager\execute.py", line 59, in quick_execute
+    except TypeError as e:
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Graph execution error:
+
+Detected at node gradient_tape/compile_loss/mean_squared_error/sub/BroadcastGradientArgs defined at (most recent call last):
+  File "D:\repositories\StockPredictorApp\main.py", line 41, in <module>
+
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\pipeline\stage_04_model_training.py", line 14, in initiate_model_training
+
+  File "D:\repositories\StockPredictorApp\src\stockpredictor\components\model_trainer.py", line 55, in train_LSTM_model
+
+  File "C:\Users\user\AppData\Roaming\Python\Python312\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+
+  File "C:\Users\user\AppData\Roaming\Python\Python312\site-packages\keras\src\backend\tensorflow\trainer.py", line 368, in fit
+
+  File "C:\Users\user\AppData\Roaming\Python\Python312\site-packages\keras\src\backend\tensorflow\trainer.py", line 216, in function
+
+  File "C:\Users\user\AppData\Roaming\Python\Python312\site-packages\keras\src\backend\tensorflow\trainer.py", line 129, in multi_step_on_iterator
+
+  File "C:\Users\user\AppData\Roaming\Python\Python312\site-packages\keras\src\backend\tensorflow\trainer.py", line 110, in one_step_on_data
+
+  File "C:\Users\user\AppData\Roaming\Python\Python312\site-packages\keras\src\backend\tensorflow\trainer.py", line 75, in train_step
+
+Incompatible shapes: [32] vs. [32,120]
+	 [[{{node gradient_tape/compile_loss/mean_squared_error/sub/BroadcastGradientArgs}}]] [Op:__inference_multi_step_on_iterator_6807]
+[2024-12-09 16:31:40,596: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-12-09 16:31:40,596: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-12-09 16:31:45,045: INFO: main: >>>>>>> stage MOdel training Stage started <<<<<<<<]
+[2024-12-09 16:31:45,049: INFO: common: yaml file: D:\repositories\StockPredictorApp\config\config.yaml loaded successfully]
+[2024-12-09 16:31:45,049: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-09 16:31:45,049: INFO: common: Directory artifacts created successfully]
+[2024-12-09 16:31:45,049: INFO: common: Directory artifacts/model_trainer created successfully]
+[2024-12-09 16:39:50,170: INFO: main: >>>>>>> stage MOdel training Stage completed <<<<<<<<
+
+=================x]

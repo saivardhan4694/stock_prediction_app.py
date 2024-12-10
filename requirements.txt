@@ -1,3 +1,9 @@
 numpy
 pandas
 yfinance
+ensure
+python-box
+PyYAML
+xgboost 
+statsmodels 
+scikit-learn 

@@ -4,7 +4,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format="[%(asctime)s]: %(message)s: ")
 
-project_name = "textSummarizer"
+project_name = "stockpredictor"
 
 list_of_files = {
     f"src/{project_name}/__init__.py",
